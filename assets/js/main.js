@@ -6,6 +6,13 @@
 
 (function($) {
 
+
+
+
+
+
+
+
 	skel.breakpoints({
 		xlarge:	'(max-width: 1680px)',
 		large:	'(max-width: 1280px)',
@@ -23,6 +30,15 @@
 			$body.addClass('is-loading');
 
 			$window.on('load', function() {
+
+				//load iframe after load
+
+				var videoGameArrangementsSrc="https://www.youtube.com/embed/videoseries?list=PL1s2rkfJtMCRbmG4eiVQQTNtR4KJrPpN2"
+				var originalSoundCloudSrc="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/257342314&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"
+
+				$("#ytVGA").attr('src', videoGameArrangementsSrc);
+				$("#scOC").attr('src', originalSoundCloudSrc);
+
 				window.setTimeout(function() {
 					$body.removeClass('is-loading');
 				}, 100);

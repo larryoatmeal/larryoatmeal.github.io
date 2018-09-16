@@ -1,0 +1,48 @@
+/* Constants */
+
+html {
+    --background_color: #1F2126;
+    --dark_color: #353942;
+    --light_color: #F2F7F7;
+    --red: #FF0000;
+}
+
+
+/* Body */
+
+body {
+    font-family: "Raleway";
+    color: var(--light_color);
+    background-color: var(--background_color);
+    margin: 2%;
+}
+
+
+/* Drumpads */
+
+.container {
+    width: 80vw;
+}
+
+.col {
+	margin: 5% 1%;
+}
+
+.card {
+	padding-top: 80%;
+	background-color: var(--dark_color);
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px 2px lightyellow;
+}
+
+
+/* Options */
+
+.dropdown {
+    display: inline-block;
+}
+
+.btn, .dropdown {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
